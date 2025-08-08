@@ -2,7 +2,7 @@ FROM n8nio/n8n:latest
 
 USER root
 # Install dependencies
-RUN apk add --no-cache curl git build-base bash util-linux coreutils \
+RUN apk add --no-cache curl git build-base bash util-linux coreutils python3 make g++ \
     && curl -Ls https://astral.sh/uv/install.sh | bash \
     && cp /root/.local/bin/uv /usr/local/bin/uv \
     && cp /root/.local/bin/uvx /usr/local/bin/uvx \
