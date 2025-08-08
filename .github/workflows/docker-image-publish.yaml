@@ -46,5 +46,7 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.annotations }}
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/n8n-uvx:latest
+            ghcr.io/${{ github.repository_owner }}/n8n-uvx:${{ github.sha }}
