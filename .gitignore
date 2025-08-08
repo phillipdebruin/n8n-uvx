@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Docker artifacts
+*.pid
+*.seed
+*.log
+docker-compose.override.yml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# n8n specific
+/home/node/.n8n
+/data/mcp
+
+# Build artifacts
+dist/
+build/
+.cache/
+.tmp/
+
+# IDE / editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
