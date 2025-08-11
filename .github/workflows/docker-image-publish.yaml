@@ -1,4 +1,4 @@
-name: Build and Publish n8n-UVX Image
+name: Build and Publish Image
 
 on:
   workflow_dispatch:
